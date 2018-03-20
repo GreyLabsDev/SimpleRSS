@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:theme="@style/AppTheme.Toolbar.My"
+    style="@style/AppTheme.Toolbar.My"
+    >
+
+
+    <item
+        android:id="@+id/app_bar_search"
+        android:icon="@drawable/search_drawable"
+        android:title="Search"
+        android:visible="true"
+        android:iconTint="@color/colorThemeAccent"
+        android:iconTintMode="multiply"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/actionFetch"
+        android:icon="@drawable/sync_drawable"
+        android:title="Item"
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
+      android:id="@+id/actionAddSrc"
+      android:icon="@drawable/bookmark_unfill_drawable"
+      android:title="Item"
+      android:visible="true"
+      app:showAsAction="always" />
+    <item
+        android:id="@+id/actionDropDb"
+        android:icon="@drawable/delete_drawable"
+        android:title="addSource"
+        android:visible="true"
+        app:showAsAction="always" />
+
+
+</menu>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/rss_card"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginTop="8sp"
+    android:layout_marginBottom="8sp"
+    android:layout_marginLeft="8sp"
+    android:layout_marginRight="8sp"
+    card_view:cardElevation="6dp"
+    >
+    <!--card_view:cardBackgroundColor="@color/colorPrimaryLight"-->
+
+    <android.support.constraint.ConstraintLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:id="@+id/cl"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/colorThemePrimary">
+        <TextView
+          android:id="@+id/tvTitle"
+          android:textStyle="bold"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="8dp"
+          android:layout_marginStart="8dp"
+          android:layout_marginEnd="8dp"
+          android:hint="RSS title"
+          android:textColor="@color/colorWhite"
+          android:textSize="22sp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+          android:id="@+id/tvDescription"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:layout_marginStart="8dp"
+          android:layout_marginEnd="8dp"
+          android:hint="RSS description"
+          android:textColor="@color/colorWhite"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/tvSourceRSS"/>
+
+        <ImageButton
+          android:id="@+id/btnFullVersion"
+          android:layout_width="48dp"
+          android:layout_height="48dp"
+          android:layout_marginTop="24dp"
+          android:layout_marginBottom="8dp"
+          android:layout_marginEnd="8dp"
+          android:background="@android:color/transparent"
+          android:scaleType="fitXY"
+          android:text="Read more"
+          android:textColor="@color/colorThemePrimary"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/tvDescription"
+          app:srcCompat="@drawable/open_drawable"/>
+
+        <TextView
+          android:id="@+id/tvPubDate"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="8dp"
+          android:layout_marginBottom="8dp"
+          android:layout_marginStart="8dp"
+          android:paddingTop="8dp"
+          android:paddingBottom="8dp"
+          android:hint="Post date/time"
+          android:textColor="@color/colorThemeAccent"
+          app:layout_constraintBottom_toBottomOf="@+id/btnFullVersion"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@+id/btnFullVersion"/>
+
+        <TextView
+          android:id="@+id/tvSourceRSS"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="8dp"
+          android:hint="Source"
+          android:textColor="@color/colorThemeAccent"
+          android:textSize="16sp"
+          app:layout_constraintStart_toStartOf="@+id/tvTitle"
+          app:layout_constraintTop_toBottomOf="@+id/tvTitle"/>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
