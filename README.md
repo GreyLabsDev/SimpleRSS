@@ -12,6 +12,6 @@ It`s just an example and "training field" for testing some technologies. If some
 * Cleaning all downloaded news and sources
 
 ### Used technologies
-* [OkHttp3](https://github.com/square/okhttp) - for network use
+* [OkHttp3](https://square.github.io/okhttp/) - for network use
 * [Room ORM](https://developer.android.com/training/data-storage/room/index.html) - for acces to database, reading, writing and searching
 * [LiveData](https://developer.android.com/topic/libraries/architecture/livedata.html) - for reactive UI (updating RecyclerView items after geting full response)
