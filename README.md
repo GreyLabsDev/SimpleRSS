@@ -6,8 +6,8 @@ It`s just an example and "training field" for testing some technologies. If some
 
 ### Features
 * Adding multiple RSS sources for reading
-* Storing downloaded news items todatabase
-* Searching in downloaded news by keyword in title,description or source name
+* Storing downloaded news in database
+* Searching in downloaded news by keyword in title, description or source name
 * Reading full versions of downloaded news (link to browser)
 * Cleaning all downloaded news and sources
 
